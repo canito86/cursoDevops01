@@ -10,6 +10,7 @@ jobs:
   construir:
 
     runs-on: ubuntu-latest
+    # variables de entorno
 
     steps:
 
@@ -28,3 +29,15 @@ jobs:
 
       - name: Deploy
         run: echo Deployando
+
+  Checkout:
+
+    runs-on: ubuntu-latest
+    # variables de entorno
+
+    steps:
+
+      - name: listar
+        run: ls -al
+      - name: Checkout
+        uses: actions/checkout@v5.0.0
