@@ -36,8 +36,8 @@ jobs:
     # variables de entorno
 
     steps:
-
-      - name: listar
-        run: ls -al
+      
       - name: Checkout
         uses: actions/checkout@v5.0.0
+      - name: listar
+        run: ls -al
